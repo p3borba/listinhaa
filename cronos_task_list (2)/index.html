@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRONOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1><span class="icon">⏳</span> CRONOS</h1>
+            <p>Estabeleça metas • Organize seu tempo • Evolua sempre</p>
+        </header>
+
+        <div class="filter">
+            <label>Filtro:
+                <select id="filter-tasks">
+                    <option value="all">Todas</option>
+                    <option value="completed">Concluídas</option>
+                    <option value="incomplete">Não Concluídas</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="task-list" id="task-list">
+            <!-- Tarefas renderizadas aqui -->
+        </div>
+
+        <div class="new-task">
+            <input type="text" id="new-task-input" placeholder="Nova tarefa...">
+            <button onclick="addTask()">Adicionar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
