@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Listas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-overlay"></div>
+    <div class="app-container">
+        <header class="app-header">
+            <img src="https://www.conversordeletras.pt/generate/Mason/140/ffffff/none/Gerenciamento%2BListas/83eb3cb469eca97c3810281e4b3646e8.png" 
+                 alt="Gerenciamento de Listas" 
+                 class="logo-title">
+            <p class="subtitle">estabeleça metas • organize seu tempo • evolua sempre</p>
+            <div class="header-controls">
+                <button id="btn-add-block" class="btn-primary">
+                    <i class="fas fa-plus"></i> Novo Bloco
+                </button>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-list"></i> Todas
+                    </button>
+                    <button class="filter-btn" data-filter="completed">
+                        <i class="fas fa-check-circle"></i> Concluídas
+                    </button>
+                    <button class="filter-btn" data-filter="pending">
+                        <i class="fas fa-hourglass-half"></i> Pendentes
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="blocks-container" id="blocks-container">
+        </div>
+
+        <footer class="app-footer">
+            <p>©  <span id="current-year"></span></p>
+        </footer>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
